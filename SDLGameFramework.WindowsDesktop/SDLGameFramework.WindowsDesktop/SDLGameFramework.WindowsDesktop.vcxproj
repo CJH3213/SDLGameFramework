@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{91715683-a714-4f7c-9ad5-7c1202bcb4f9}</ProjectGuid>
+    <RootNamespace>SDLGameFrameworkWindowsDesktop</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2_Include.props" />
+    <Import Project="SDL2_Lib_x86.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2_Include.props" />
+    <Import Project="SDL2_Lib_x86.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2_Lib_x64.props" />
+    <Import Project="SDL2_Include.props" />
+    <Import Project="FFmpeg_Lib_x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2_Lib_x64.props" />
+    <Import Project="SDL2_Include.props" />
+    <Import Project="FFmpeg_Lib_x64.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)OutPut\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)OutPut\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)OutPut\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)OutPut\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Resource $(OutDir)Resource\ /s /e
+
+copy "$(ProjectDir)SDL2\SDL2-2.28.5\lib\$(Platform)\*.dll" "$(OutDir)"
+
+copy "$(ProjectDir)SDL2\SDL2_ttf-2.0.15\lib\$(Platform)\*.dll" "$(OutDir)"
+
+copy "$(ProjectDir)SDL2\SDL2_image-2.0.5\lib\$(Platform)\*.dll" "$(OutDir)"
+copy "$(ProjectDir)FFmpeg\x64\bin\*.dll" "$(OutDir)"</Command>
+      <Message>把资源文件和dll自动复制到生成目录，生成事件无法正常继承，不要写在属性管理器</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Resource $(OutDir)Resource\ /s /e
+
+copy "$(ProjectDir)SDL2\SDL2-2.28.5\lib\$(Platform)\*.dll" "$(OutDir)"
+
+copy "$(ProjectDir)SDL2\SDL2_ttf-2.0.15\lib\$(Platform)\*.dll" "$(OutDir)"
+
+copy "$(ProjectDir)SDL2\SDL2_image-2.0.5\lib\$(Platform)\*.dll" "$(OutDir)"
+copy "$(ProjectDir)FFmpeg\x64\bin\*.dll" "$(OutDir)"</Command>
+      <Message>把资源文件和dll自动复制到生成目录，生成事件无法正常继承，不要写在属性管理器</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="AxisXYPF.cpp" />
+    <ClCompile Include="BlockPF.cpp" />
+    <ClCompile Include="BlockTransPF.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ButtonPF.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraPF.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="CanvasPF.cpp" />
+    <ClCompile Include="CanvasRenderer.cpp" />
+    <ClCompile Include="ClickTest.cpp" />
+    <ClCompile Include="ColliderTestPF.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="ImagesManager.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathBase.cpp" />
+    <ClCompile Include="Matrix4x4.cpp" />
+    <ClCompile Include="NextText.cpp" />
+    <ClCompile Include="Prefab.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RectanglePF.cpp" />
+    <ClCompile Include="RectTransform.cpp" />
+    <ClCompile Include="RenderInterface.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ScorePF.cpp" />
+    <ClCompile Include="ShapePF.cpp" />
+    <ClCompile Include="ShapeScript.cpp" />
+    <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="TestScript.cpp" />
+    <ClCompile Include="TetrisGameScene.cpp" />
+    <ClCompile Include="TetrisManager.cpp" />
+    <ClCompile Include="TetrisManagerPF.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureRenderer.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="WaitInstruction.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowsManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="AxisXYPF.h" />
+    <ClInclude Include="BlockPF.h" />
+    <ClInclude Include="BlockTransPF.h" />
+    <ClInclude Include="BoxCollider.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="ButtonPF.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraPF.h" />
+    <ClInclude Include="Canvas.h" />
+    <ClInclude Include="CanvasPF.h" />
+    <ClInclude Include="CanvasRenderer.h" />
+    <ClInclude Include="ClickTest.h" />
+    <ClInclude Include="ColliderTestPF.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="ImagesManager.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="MathBase.h" />
+    <ClInclude Include="Matrix4x4.h" />
+    <ClInclude Include="NextText.h" />
+    <ClInclude Include="Prefab.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectanglePF.h" />
+    <ClInclude Include="RectTransform.h" />
+    <ClInclude Include="RenderInterface.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ScorePF.h" />
+    <ClInclude Include="ShapePF.h" />
+    <ClInclude Include="ShapeScript.h" />
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="TestScript.h" />
+    <ClInclude Include="TetrisGameScene.h" />
+    <ClInclude Include="TetrisManager.h" />
+    <ClInclude Include="TetrisManagerPF.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureRenderer.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="WaitInstruction.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowsManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

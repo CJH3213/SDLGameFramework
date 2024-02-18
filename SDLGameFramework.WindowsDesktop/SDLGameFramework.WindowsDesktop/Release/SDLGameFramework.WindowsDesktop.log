@@ -1,0 +1,91 @@
+﻿  AxisXYPF.cpp
+  BlockPF.cpp
+  BlockTransPF.cpp
+  BoxCollider.cpp
+  Camera.cpp
+  CameraPF.cpp
+  ClickTest.cpp
+  ColliderTestPF.cpp
+  CollisionManager.cpp
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\CollisionManager.cpp(250,31): warning C4018: “<”: 有符号/无符号不匹配
+  Debug.cpp
+  FontManager.cpp
+  GameManager.cpp
+  GameObject.cpp
+  ImagesManager.cpp
+  Input.cpp
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Input.cpp(33,29): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Input.cpp(33,26): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  main.cpp
+  NextText.cpp
+  Prefab.cpp
+  Rectangle.cpp
+  RectanglePF.cpp
+  正在编译...
+  RenderInterface.cpp
+  RenderManager.cpp
+  Scene.cpp
+  SceneManager.cpp
+  Component.cpp
+  ScorePF.cpp
+  ShapePF.cpp
+  ShapeScript.cpp
+  TestScene.cpp
+  TestScript.cpp
+  TetrisGameScene.cpp
+  TetrisManager.cpp
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\TetrisManager.cpp(190,49): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\TetrisManager.cpp(190,46): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\TetrisManager.cpp(268,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\TetrisManager.cpp(268,55): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\TetrisManager.cpp(269,33): warning C4305: “参数”: 从“double”到“float”截断
+  TetrisManagerPF.cpp
+  Text.cpp
+  Texture.cpp
+  TextureRenderer.cpp
+  Transform.cpp
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(30,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(31,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(71,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(72,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(86,14): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(95,15): warning C4244: “初始化”: 从“const double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(98,19): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Transform.cpp(101,13): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  Vector2.cpp
+  Vector3.cpp
+  WaitInstruction.cpp
+  正在编译...
+  Window.cpp
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Window.cpp(79,24): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Window.cpp(79,21): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  WindowsManager.cpp
+  正在生成代码
+  1559 of 3803 functions (41.0%) were compiled, the rest were copied from previous compilation.
+    372 functions were new in current compilation
+    435 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  SDLGameFramework.WindowsDesktop.vcxproj -> E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\OutPut\Win32\Release\SDLGameFramework.WindowsDesktop.exe
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Fonts\simhei.ttf
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\acheesements_icons.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\axis.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\Axis_100p.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\Block.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\Block_Trans.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\Camera.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Images\Camera_100p.png
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\Resource\Sounds\一直很安静_阿桑.wav
+  复制了 9 个文件
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2-2.0.14\lib\x86\SDL2.dll
+  已复制         1 个文件。
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_ttf-2.0.15\lib\x86\libfreetype-6.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_ttf-2.0.15\lib\x86\SDL2_ttf.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_ttf-2.0.15\lib\x86\zlib1.dll
+  已复制         3 个文件。
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\libjpeg-9.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\libpng16-16.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\libtiff-5.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\libwebp-7.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\SDL2_image.dll
+  E:\CJHFiles\C++\SDLGameFramework\SDLGameFramework.WindowsDesktop\SDLGameFramework.WindowsDesktop\SDL2\SDL2_image-2.0.5\lib\x86\zlib1.dll
+  已复制         6 个文件。

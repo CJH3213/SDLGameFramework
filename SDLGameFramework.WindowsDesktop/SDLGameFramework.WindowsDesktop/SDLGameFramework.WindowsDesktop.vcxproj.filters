@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\SGF">
+      <UniqueIdentifier>{bc067815-5854-470c-9d59-e929a6f24782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SGF">
+      <UniqueIdentifier>{32f709e2-fec6-42e1-af7c-9ac0a550df32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Games">
+      <UniqueIdentifier>{303e3c5b-c267-4ad5-bcd0-c1eb31fc4a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Games">
+      <UniqueIdentifier>{b64ce85b-d898-4487-b81f-61dfc5066ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Games\Prefabs">
+      <UniqueIdentifier>{5a8e2837-04ca-4dfe-a603-fc78cce5da9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Games\Scripts">
+      <UniqueIdentifier>{f63d3273-1c3b-4c61-aff5-b2d4c60a9a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Games\Prefabs">
+      <UniqueIdentifier>{ef4891c8-658d-447e-aa18-1dc4c182b71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Games\Scripts">
+      <UniqueIdentifier>{d9933127-bd1a-4ba1-8735-ff3920e2b102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Games\Scenes">
+      <UniqueIdentifier>{2b8cfe5e-09a5-497e-9b30-775b952073b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Games\Scenes">
+      <UniqueIdentifier>{6dd5651d-c9bc-40a7-a903-c072cb97d6ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Component.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="MathBase.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Prefab.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitInstruction.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureRenderer.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderInterface.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="RectanglePF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagesManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="AxisXYPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickTest.cpp">
+      <Filter>源文件\Games\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapePF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeScript.cpp">
+      <Filter>源文件\Games\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisManager.cpp">
+      <Filter>源文件\Games\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisManagerPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockTransPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="ScorePF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="NextText.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderTestPF.cpp">
+      <Filter>源文件\Games\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScript.cpp">
+      <Filter>源文件\Games\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>源文件\Games\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisGameScene.cpp">
+      <Filter>源文件\Games\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="RectTransform.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasRenderer.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonPF.cpp">
+      <Filter>源文件\Games\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4x4.cpp">
+      <Filter>源文件\SGF</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Component.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Prefab.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitInstruction.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureRenderer.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderInterface.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="RectanglePF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagesManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="AxisXYPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickTest.h">
+      <Filter>头文件\Games\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapePF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeScript.h">
+      <Filter>头文件\Games\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisManager.h">
+      <Filter>头文件\Games\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisManagerPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockTransPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="ScorePF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="NextText.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScript.h">
+      <Filter>头文件\Games\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>头文件\Games\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisGameScene.h">
+      <Filter>头文件\Games\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="RectTransform.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderTestPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasRenderer.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonPF.h">
+      <Filter>头文件\Games\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4.h">
+      <Filter>头文件\SGF</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

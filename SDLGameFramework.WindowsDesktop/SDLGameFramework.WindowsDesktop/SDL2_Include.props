@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(ProjectDir)SDL2\SDL2-2.28.5\include;$(ProjectDir)SDL2\SDL2_ttf-2.0.15\include;$(ProjectDir)SDL2\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Resource $(OutDir)Resource\ /s /e
+copy "$(ProjectDir)SDL2\SDL2-2.0.14\lib\$(Platform)\*.dll" "$(OutDir)"
+copy "$(ProjectDir)SDL2\SDL2_ttf-2.0.15\lib\$(Platform)\*.dll" "$(OutDir)"
+copy "$(ProjectDir)SDL2\SDL2_image-2.0.5\lib\$(Platform)\*.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+</Project>
