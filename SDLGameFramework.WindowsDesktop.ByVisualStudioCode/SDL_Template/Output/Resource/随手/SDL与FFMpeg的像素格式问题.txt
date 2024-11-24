@@ -1,0 +1,18 @@
+注意：SDL_RGBA = FFMpeg_ABGR，相反的，是因为二者的格式名称具有不同含义：
+
+十六进制字节高低关系： 0x R G B A
+
+            地址编号： 0 1 2 3 4 5...
+小端存储地址高低关系： A B G R A B...
+大端存储地址高低关系： R G B A R G...
+
+SDL_RGBA是表示字节高低关系，R在高字节，A在低字节，
+FFMpeg_ABGR是表示内存地址高低关系，A|B|G|R|A|B|G|R...，A在低地址，R在高地址
+
+在Windows、Linux系统等小端存储系统，低字节在低地址，高字节在高地址，SDL_RGBA = FFMpeg_ABGR
+在大端存储系统，低字节在高地址，高字节在低地址，SDL_RGBA = FFMpeg_RGBA
+
+元素储存还分为交叉和平行两种，交叉是RGB|RGB|RGB，平行是RRR...GGG...BBB...
+在平行时不需要注意大小端问题，所以SDL_RGB24 = FFMpeg_RGB24
+
+SDL还有一个坑：SDL_PIXELFORMAT_BGR888 = SDL_PIXELFORMAT_XBGR8888 其实是占4个字节

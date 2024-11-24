@@ -1,0 +1,141 @@
+// 传入音频文件路径，返回解码后的音频数据包
+std::shared_ptr<AudioPackage> DecodeAudioFile(const char* intputFile)
+{
+	// FFmpeg对UTF8支持最好，但是GBK路径传入也能读到文件，就是路径的中文会乱码
+	// 但是读取文件内的中文不会乱码
+
+	//uint8_t* inbuf = new uint8_t[AUDIO_INBUF_SIZE + AV_INPUT_BUFFER_PADDING_SIZE];
+
+	// 从文件中读出格式
+	AVFormatContext_ptr formatContext;
+	if (formatContext.OpenInput(intputFile, NULL, NULL) != 0)	// 打开文件
+		return nullptr;
+	if (formatContext.FindStreamInfo(NULL) != 0)		// 获取文件中有哪些流
+		return nullptr;
+	formatContext.DumpFormat(0, intputFile, 0);		// 输出信息
+
+	// 寻找其中的音频流，第一个找到的音频流
+	int audioStreamIndex = -1;
+	AVCodecParameters* pParameters = nullptr;
+	for (int i = 0; i < formatContext->nb_streams; i++)
+		if (formatContext->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_AUDIO)
+		{
+			audioStreamIndex = i;
+			pParameters = formatContext->streams[i]->codecpar;
+			break;
+		}
+	if (pParameters == nullptr)
+		return nullptr;
+
+	// 查找mp3解码器
+	const AVCodec* codec = avcodec_find_decoder(pParameters->codec_id);
+	if (codec == nullptr) 
+	{
+		fprintf(stderr, "Codec not found\n");
+		return nullptr;
+	}
+
+	// 根据解码器ID（文件格式），初始化裸流解析器，
+	//AVCodecParserContext* parser = av_parser_init(codec->id);
+	//if (!parser) {
+	//	fprintf(stderr, "Parser not found\n");
+	//	exit(1);
+	//}
+
+	// 分配，解码器 上下文
+	AVCodecContext_ptr codecContext(codec);
+	if (*codecContext == nullptr) {
+		fprintf(stderr, "Could not allocate audio codec context\n");
+		return nullptr;
+	}
+
+	// 将 文件的参数 复制到 解码器上下文
+	codecContext.ParametersToContext(pParameters);
+	//c->channel_layout = AV_CH_LAYOUT_STEREO;
+
+	// 打开解码器
+	if (codecContext.Open2(codec, NULL) < 0) {
+		fprintf(stderr, "Could not open codec\n");
+		return nullptr;
+	}
+	
+	//	// 只在第一次循环，分配解码器 的 帧
+	AVFrame_ptr decodedFrame;
+
+	// 打开输入输出文件
+	//fopen_s(&f, intputFile, "rb");		// 如中文路径需GBK编码
+	//if (!f) {
+	//	fprintf(stderr, "Could not open %s\n", intputFile);
+	//	exit(1);
+	//}
+	//
+	// 首次读取原音频数据
+	//uint8_t* data = inbuf;
+	//size_t data_size = fread(inbuf, 1, AUDIO_INBUF_SIZE, f);
+	//
+	// while (data_size > 0) {
+	//
+	//	// 只在第一次循环，分配解码器 的 帧
+	//	if (!decoded_frame) {
+	//		if (!(decoded_frame = av_frame_alloc())) {
+	//			fprintf(stderr, "Could not allocate audio frame\n");
+	//			exit(1);
+	//		}
+	//	}
+	//
+	//	// 原文件数据->解析器->MP3编码数据，解析一次原始数据 到数据包
+	//	int ret = av_parser_parse2(parser, c, &pkt->data, &pkt->size,
+	//		data, data_size,
+	//		AV_NOPTS_VALUE, AV_NOPTS_VALUE, 0);
+	//	if (ret < 0) {
+	//		fprintf(stderr, "Error while parsing\n");
+	//		exit(1);
+	//	}
+	//	data += ret;
+	//	data_size -= ret;
+	//
+	//	// 接收解码数据并写入到输出文件
+	//	if (pkt->size)
+	//		decode(c, pkt, decoded_frame, audioPck->mData);
+	//
+	//	// 已读数据所剩无几时，读入新一轮的数据
+	//	if (data_size < AUDIO_REFILL_THRESH) {
+	//		memmove(inbuf, data, data_size);		// 将data剩的数据移动到inbuf开头
+	//		data = inbuf;
+	//		int len = fread(data + data_size, 1, AUDIO_INBUF_SIZE - data_size, f);
+	//		if (len > 0)	data_size += len;
+	//	}
+	//}
+	//
+	// 处理最后的数据 
+	//pkt->data = NULL;
+	//pkt->size = 0;
+	//decode(c, pkt, decoded_frame, audioPck->mData);
+
+	// 分配数据包
+	AVPacket_ptr packet;
+
+	// 构造游戏的音频包裹，填入音频参数
+	auto audioPck = std::make_shared<AudioPackage>();
+	audioPck->mDesiredSpec.freq = pParameters->sample_rate;
+	audioPck->mDesiredSpec.format = AVSampleFormatToSDLAudioFormat((AVSampleFormat)pParameters->format);
+	audioPck->mDesiredSpec.channels = pParameters->channels;
+
+	while (formatContext.ReadFrame(*packet) >= 0)
+	{
+		if (packet->stream_index == audioStreamIndex)
+			decode(*codecContext, *packet, *decodedFrame, audioPck->mData);
+		packet.Unref();
+	}
+
+	//fclose(f);
+	//avcodec_free_context(&c);
+	//av_parser_close(parser);
+	//av_frame_free(&decoded_frame);
+	//av_packet_free(&pkt);
+	//avformat_close_input(&fmt_ctx);
+	//avformat_free_context(fmt_ctx);
+	//delete[] inbuf;
+
+	return audioPck;
+}
